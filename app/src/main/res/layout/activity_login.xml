@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="70dp"
+        android:text="Firebase login"
+        />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_below="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:text="Login to your account "
+        />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/emailId"
+        android:layout_below="@+id/txtView"
+        android:layout_marginTop="40dp"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+
+        android:paddingRight="10dp"
+        app:met_floatingLabel="highlight"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/password"
+        android:layout_below="@+id/emailId"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:met_floatingLabel="highlight"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:text="Sign In"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/loginProgress"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/signIn"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
