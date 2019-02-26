@@ -35,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
         signIn = findViewById(R.id.signIn);
         signUp = findViewById(R.id.signUp);
 
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         if(firebaseUser!= null){
             Intent in = new Intent(MainActivity.this,UserActivity.class);
