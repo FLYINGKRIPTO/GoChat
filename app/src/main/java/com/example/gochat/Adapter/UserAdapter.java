@@ -1,6 +1,7 @@
 package com.example.gochat.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.gochat.MessageActivity;
 import com.example.gochat.Model.User;
 import com.example.gochat.R;
 
@@ -45,6 +47,15 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
         else{
             Glide.with(mContext).load(user.getImageURL()).into(viewHolder.profile_image);
         }
+
+        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, MessageActivity.class);
+                intent.putExtra("userid",user.getId());
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override
