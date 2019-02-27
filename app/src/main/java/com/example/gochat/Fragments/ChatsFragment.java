@@ -100,6 +100,7 @@ public class ChatsFragment extends Fragment {
                             }
                         }
                     } catch (ConcurrentModificationException e) {
+
                         Log.d(TAG, "onDataChange: ");
                     }
 

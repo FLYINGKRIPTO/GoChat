@@ -74,7 +74,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 User user = dataSnapshot.getValue(User.class);
-                username.setText(user.getUsername());
+                username.setText(user.getUsername().toUpperCase());
                 if(user.getImageURL().equals("default")){
                     image_profile.setImageResource(R.drawable.boy);
 
@@ -98,7 +98,12 @@ public class ProfileFragment extends Fragment {
         });
         return view;
     }
+    private String getFileExtension(Uri uri){
+        ContentResolver contentResolver = getContext().getContentResolver();
+        MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
+        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
 
+    }
     private void openImage() {
 
         Intent intent = new Intent();
@@ -106,12 +111,7 @@ public class ProfileFragment extends Fragment {
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent,IMAGE_STORAGE);
     }
-    private String getFileExtension(Uri uri){
-        ContentResolver contentResolver = getContext().getContentResolver();
-        MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
-        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
 
-    }
     private void uploadImage(){
         final ProgressDialog pd = new ProgressDialog(getContext());
         pd.setMessage("Uploading");
@@ -124,7 +124,7 @@ public class ProfileFragment extends Fragment {
             uploadTask = fileReference.putFile(imageUri);
             uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot,Task<Uri>>() {
                 @Override
-                public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot>task) throws Exception {
+                public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
                     if (!task.isSuccessful()){
                         throw  task.getException();
                     }
