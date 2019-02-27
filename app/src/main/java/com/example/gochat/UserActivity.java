@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.gochat.Fragments.ChatsFragment;
+import com.example.gochat.Fragments.ProfileFragment;
 import com.example.gochat.Fragments.UsersFragment;
 import com.example.gochat.Model.User;
 import com.google.firebase.auth.FirebaseAuth;
@@ -80,6 +81,7 @@ public class UserActivity extends AppCompatActivity {
        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPagerAdapter.addFragment(new ChatsFragment(),"Chats");
         viewPagerAdapter.addFragment(new UsersFragment(),"users");
+        viewPagerAdapter.addFragment(new ProfileFragment(),"profile");
 
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
