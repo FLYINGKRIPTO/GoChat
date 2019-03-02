@@ -132,6 +132,7 @@ public class RegisterActivity extends AppCompatActivity {
                             hashMap.put("phone", String.valueOf(phone));
                             hashMap.put("email",email);
                             hashMap.put("status","offline");
+                            hashMap.put("serach",username.toLowerCase());
 
                             reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override

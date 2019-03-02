@@ -8,6 +8,16 @@ public class User {
     public String email;
     public String status;
 
+    public String getSearch() {
+        return search;
+    }
+
+    public void setSearch(String search) {
+        this.search = search;
+    }
+
+    public String search;
+
 
     public String getStatus() {
         return status;
@@ -27,13 +37,14 @@ public class User {
         this.email = email;
     }
 
-    public User(String id, String username, String imageURL, String phone, String email,String status) {
+    public User(String id, String username, String imageURL, String phone, String email,String status,String search) {
         this.id = id;
         this.username = username;
         this.imageURL = imageURL;
         this.phone = phone;
         this.email = email;
         this.status = status;
+        this.search = search;
     }
 
     public String getId() {
