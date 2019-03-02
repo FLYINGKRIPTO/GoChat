@@ -131,6 +131,7 @@ public class RegisterActivity extends AppCompatActivity {
                             hashMap.put("imageURL","default");
                             hashMap.put("phone", String.valueOf(phone));
                             hashMap.put("email",email);
+                            hashMap.put("status","offline");
 
                             reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override

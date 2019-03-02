@@ -88,7 +88,7 @@ public class ChatsFragment extends Fragment {
                     try {
                         for (String id : usersList) {
                             if (user.getId().equals(id)) {
-                                if (mUsers.size() != 0) {
+                                if (mUsers.size() != 0 ) {
                                     for (User user1 : mUsers) {
                                         if (!user.getId().equals(user1.getId())) {
                                             mUsers.add(user);
@@ -105,7 +105,7 @@ public class ChatsFragment extends Fragment {
                     }
 
                 }
-                userAdapter = new UserAdapter(getContext(), mUsers);
+                userAdapter = new UserAdapter(getContext(), mUsers,true);
                 recyclerView.setAdapter(userAdapter);
             }
 
