@@ -9,7 +9,6 @@ upload profile pictures
 ![Screenshot_20190311-132745](https://user-images.githubusercontent.com/34384226/54109395-8bf29680-4404-11e9-9895-73d20e389334.png)
 ![Screenshot_20190311-132802](https://user-images.githubusercontent.com/34384226/54109396-8c8b2d00-4404-11e9-9200-baa53e8c868a.png)
 ![Screenshot_20190311-132831](https://user-images.githubusercontent.com/34384226/54109398-8c8b2d00-4404-11e9-86fb-107e7a48abf5.png)
-![Screenshot_20190311-130544](https://user-images.githubusercontent.com/34384226/54109399-8c8b2d00-4404-11e9-8fb9-24187ecf616d.png)
 ![Screenshot_20190311-132706](https://user-images.githubusercontent.com/34384226/54109400-8d23c380-4404-11e9-8cdb-00de0ed4e113.png)
 ![Screenshot_20190311-132723](https://user-images.githubusercontent.com/34384226/54109401-8d23c380-4404-11e9-9698-56c9a710306f.png)
 ![Screenshot_20190311-132729](https://user-images.githubusercontent.com/34384226/54109402-8dbc5a00-4404-11e9-8527-6861864d5499.png)
