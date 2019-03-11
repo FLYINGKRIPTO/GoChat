@@ -1,9 +1,22 @@
 # GoChat
 Firebase Chat application
 Prepared a Chat application on Firebase,
+## Features
 Chat with different users, 
 see if they are online or not,
-upload profile pictures 
+upload profile pictures
+
+## Built on
+Firebase Authentication through Email and Password
+Firebase Realtime Database for storing users data and chats
+Firebase Storage for uploading users profile picture
+
+## More features to be added soon
+see if user has seen your message or not
+notification on new message arrival
+
+
+
 
 ![Screenshot_20190311-132729](https://user-images.githubusercontent.com/34384226/54109402-8dbc5a00-4404-11e9-8527-6861864d5499.png)
 ![Screenshot_20190311-132745](https://user-images.githubusercontent.com/34384226/54109395-8bf29680-4404-11e9-9895-73d20e389334.png)
