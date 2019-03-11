@@ -2,18 +2,18 @@
 Firebase Chat application
 Prepared a Chat application on Firebase,
 ## Features
-Chat with different users, 
-see if they are online or not,
-upload profile pictures
+-Chat with different users, 
+-see if they are online or not,
+-upload profile pictures
 
 ## Built on
-Firebase Authentication through Email and Password
-Firebase Realtime Database for storing users data and chats
-Firebase Storage for uploading users profile picture
+-Firebase Authentication through Email and Password
+-Firebase Realtime Database for storing users data and chats
+-Firebase Storage for uploading users profile picture
 
 ## More features to be added soon
-see if user has seen your message or not
-notification on new message arrival
+-see if user has seen your message or not
+-notification on new message arrival
 
 
 
